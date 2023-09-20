@@ -26,9 +26,7 @@ const cars = ref([
   { id: 4, name: "car4", year: 1994, mark: "Chevrolet", price: "17000$" },
 ]);
 
-const car = computed(() => {
-  return cars.value.find((c) => c.id === carId);
-});
+const car = cars.value.filter((c) => c.id === carId)[0];
 
 const goBack = () => {
   router.push({ name: "cars" });
@@ -37,9 +35,10 @@ const goBack = () => {
 
 <style scoped>
 h1 {
-  color: #007bff; 
+  color: #007bff;
   text-align: center;
-  margin: 20px auto;}
+  margin: 20px auto;
+}
 
 .car-details {
   border: 1px solid #ccc;
@@ -53,11 +52,11 @@ h1 {
 
 .car-details h2 {
   font-size: 24px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .car-details p {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 .car-details button {
@@ -68,7 +67,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   display: block;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .car-details button:hover {

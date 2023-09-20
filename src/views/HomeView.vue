@@ -15,7 +15,7 @@
 }
 
 h1 {
-  color: #007bff; /* Your desired color */
+  color: #007bff; 
   font-size: 28px;
   margin-bottom: 10px;
 }

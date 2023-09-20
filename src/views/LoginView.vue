@@ -20,7 +20,6 @@
 </script>
 
 <style scoped>
-/* Custom font family */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .login {
@@ -29,10 +28,10 @@
 }
 
 h1 {
-  color: #007bff; /* Your desired color */
+  color: #007bff;
   font-size: 28px;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif; /* Apply the custom font family */
+  font-family: 'Roboto', sans-serif; 
 }
 
 form {
@@ -55,8 +54,7 @@ label {
   font-weight: bold;
 }
 
-input[type="text"],
-input[type="password"] {
+input {
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
